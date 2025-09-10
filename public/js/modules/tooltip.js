@@ -27,7 +27,11 @@ export default function initToolTip() {
   const onMouseMove = {
     handleEvent(event) {
       this.toolTipBox.style.top = event.pageY + 20 + "px";
-      this.toolTipBox.style.left = event.pageX + 20 + "px";
+      if (event.pageX + 240 > window.innerWidth) {
+        this.toolTipBox.style.left = event.pageX + -180 + "px";
+      } else {
+        this.toolTipBox.style.left = event.pageX + 20 + "px";
+      }
     },
   };
 
