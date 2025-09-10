@@ -1,0 +1,23 @@
+/* css - numeros animais */
+.numeros-grid {
+    grid-column: 2 / 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.numeros-grid h3 {
+    font: 500 2rem 'Playfair Display SC';
+    margin-bottom: .5rem;
+}
+
+.numeros-grid span {
+    font: bold 1.5rem 'IBM Plex Mono', monospace;
+    color: #E54;
+}
+
+@media(width <=700px) {
+    .numeros-grid {
+        grid-column: 1;
+    }
+}
