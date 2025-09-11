@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:700|Playfair+Display+SC:ital@0;1&display=swap');
 
 * {
     margin: 0px;
@@ -212,7 +212,7 @@ body {
     }
 
     .grid-section h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .menu {
@@ -254,12 +254,19 @@ html.textoGrande {
 }
 
 .js-accordion dt::after {
-    content: "↴";
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: url(/public/assets/img/arrow-red.svg) center center no-repeat;
     margin-left: 10px;
+    transform: rotate(90deg);
+    transition: transform .3s;
 }
 
 .js-accordion dt.ativo::after {
-    content: "⬏";
+    content: "";
+    transform: rotate(-90deg);
 }
 
 .js-accordion dd.ativo {
@@ -311,4 +318,11 @@ html.textoGrande {
     padding: .2rem .5rem;
     font-weight: bold;
     border-radius: 2px;
+}
+
+.arrow-black {
+    background: url(/public/assets/img/arrow-black.svg) center center no-repeat;
+    display: inline-block;
+    width: 8px;
+    height: 10px;
 }
