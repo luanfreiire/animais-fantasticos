@@ -258,7 +258,7 @@ html.textoGrande {
     width: 10px;
     height: 10px;
     display: inline-block;
-    background: url(/public/assets/img/arrow-red.svg) center center no-repeat;
+    background: url(../assets/img/arrow-red.svg) center center no-repeat;
     margin-left: 10px;
     transform: rotate(90deg);
     transition: transform .3s;
@@ -321,7 +321,7 @@ html.textoGrande {
 }
 
 .arrow-black {
-    background: url(/public/assets/img/arrow-black.svg) center center no-repeat;
+    background: url(../assets/img/arrow-black.svg) center center no-repeat;
     display: inline-block;
     width: 8px;
     height: 10px;
